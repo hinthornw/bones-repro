@@ -1,0 +1,8 @@
+{
+  "dependencies": ["."], 
+  "keep_pkg_tools": ["pip"],
+  "graphs": {
+    "agent": "bones_repro:agent"
+  },
+  "env": ".env"
+}
