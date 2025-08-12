@@ -1,5 +1,6 @@
 {
   "dependencies": ["."], 
+  "python_version": "3.13",
   "keep_pkg_tools": ["pip"],
   "graphs": {
     "agent": "bones_repro:agent"

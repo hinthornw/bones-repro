@@ -13,4 +13,5 @@ class Input(TypedDict):
 
 @entrypoint()
 async def agent(state: Input):
-    logger.info("I'm in the 'agent'", node="agent", other_val="bar")
+    logger.info(f"I'm in the 'agent': {state['messages'][-1]}", node="agent", other_val="bar")
+    return {"messages": [{"role": "assistant", "content": "I'm in the 'agent'"}]}
